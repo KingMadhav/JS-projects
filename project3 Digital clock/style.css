@@ -1,0 +1,55 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(57, 55, 55);
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: black;
+}
+
+.btn {
+    padding: 5px 55px;
+    border-radius: 10px;
+    background-color: rgb(121, 119, 119);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#banner{
+    font-size: 30px;
+}
+#clock{
+    padding: 15px;
+    background-color: gold;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: black;
+    font-size: 45px;
+}
+@media screen and (max-width:560px) {
+    #banner{
+        font-size: 18px;
+    }
+    #clock{ 
+        font-size: 27px;
+    }
+}

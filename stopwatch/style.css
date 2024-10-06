@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(57, 55, 55);
+}
+
+a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover,
+a:visited {
+    color: black;
+}
+
+.btn {
+    padding: 5px 55px;
+    border-radius: 10px;
+    background-color: rgb(121, 119, 119);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.center #clock {
+    background-color: gold;
+    border: 2px solid white;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+}
+.function{
+    padding: 5px 55px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(42, 147, 123, 0.692);
+}
+
+@media screen and (max-width:560px) {
+    .center{
+       max-width: 170px;
+    }
+}
+@media screen and (min-width:560px) and (max-width:1000px) {
+    .center{
+       min-width: 470px;
+    }
+}
