@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color change every second</title>
+</head>
+
+<body style="background-color: black;  color: white;">
+    <h1>Change background color every second</h1>
+    <button id="start">START</button>
+    <button id="end">END</button>
+
+    <script>
+        let start = document.getElementById('start');
+        let end = document.getElementById('end');
+        let hex = "0123456789ABCDEF";
+        let color = "";
+        let intervalId = null;
+     
+        start.addEventListener('click', function () {
+        if (!intervalId) {
+                intervalId = setInterval(function () {
+                    color = "#";
+                    for (let i = 0; i < 6; i++) {
+                        color += hex.charAt(Math.floor(Math.random() * 16));
+                        document.body.style.backgroundColor = color;
+                    }
+                }, 1000)
+           
+                end.addEventListener('click', function () {
+                    clearInterval(intervalId);
+                    intervalId = null;
+                })
+            }})
+    </script>
+</body>
+
+</html>
