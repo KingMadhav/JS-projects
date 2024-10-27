@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: snow;
+}
+.board{
+    color: black;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    background: gold;
+}
+.cell{
+    outline: 0.5px solid royalblue;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    padding: 1px;
+}
+h1,h2{
+    text-align: center;
+}
