@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the Number Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-white flex flex-col items-center justify-center min-h-screen">
+  <div class="bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 w-96 text-center">
+    <div class="flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Find the Number</h1>
+      <button
+        id="themeToggle"
+        class="text-gray-600 dark:text-gray-300 focus:outline-none hover:text-blue-500 dark:hover:text-yellow-400">
+        🌞
+      </button>
+    </div>
+    <div class="mt-4 flex justify-around items-center">
+      <div class="flex flex-col items-center">
+        <span class="text-gray-500 dark:text-gray-400">Target</span>
+        <div id="targetNumber" class="text-4xl font-bold text-blue-600 dark:text-blue-400">0</div>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="text-gray-500 dark:text-gray-400">Time</span>
+        <div id="countdown" class="text-4xl font-bold text-red-500 dark:text-red-400">60</div>
+      </div>
+    </div>
+    <div class="mt-6 text-xl">
+      Score: <span id="score" class="font-bold text-green-600 dark:text-green-400">0</span>
+    </div>
+    <div id="bubbles" class="mt-6 grid grid-cols-4 gap-4"></div>
+    <div id="result" class="mt-6 text-lg font-bold hidden"></div>
+    <button id="restart" class="hidden mt-4 px-4 py-2 bg-blue-500 dark:bg-blue-600 text-white rounded-lg">
+      Restart
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
